@@ -1,7 +1,31 @@
+// Color definitions
+$links: #9d4c47;
+$light: #dddddd;
+$dark: #000000;
+$red: #ff0000;
+$green: #00aa00;
+
 // Page structure
 * { box-sizing: border-box; }
-nav#main-menu {}
-div#main-content {}
+body {
+    background-color: $light;
+    color: $dark;
+    font-size: 13pt;
+}
+nav#main-menu {
+    float: left;
+    width: 240px;
+    padding: 1em;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+div#main-content {
+    margin-left: 240px;
+    padding: 1em;
+}
 
 // Tables
 table {
@@ -14,12 +38,22 @@ table {
 
 // Forms
 label {
-    &.multiple-choice {}
+    display: block;
+    font-weight: bold;
+    &.multiple-choice {
+        display: inline;
+        font-weight: normal;
+    }
 }
-.form-field-wrapper {}
-.form-option-wrapper {}
-.form-error {}
-.form-info {}
+.form-field-wrapper { margin: 0.5em 1em; }
+.form-option-wrapper {
+    display: inline-block;
+    margin: 0.5em;
+}
+.form-error {
+    color: $red;
+    font-style: italic;
+}
 
 // Flash feedback
 .flash-feedback {
