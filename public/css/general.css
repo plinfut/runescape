@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+}
+table th, table td {
+  border: 1px solid;
+  padding: 0.5em 1em;
+}
+
+.flash-feedback, .flash-error, .flash-info, .flash-confirmation {
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  margin: 0.5em auto;
+  text-align: center;
+  width: 960px;
+}
+
+.flash-confirmation {
+  background-color: #88ff88;
+  border: 1px solid #004400;
+  color: #004400;
+}
+
+.flash-info {
+  background-color: #ffff88;
+  border: 1px solid #444400;
+  color: #444400;
+}
+
+.flash-error {
+  background-color: #ff8888;
+  border: 1px solid #440000;
+  color: #440000;
+}
+
+/*# sourceMappingURL=general.css.map */

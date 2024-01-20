@@ -1,0 +1,49 @@
+// Page structure
+* { box-sizing: border-box; }
+nav#main-menu {}
+div#main-content {}
+
+// Tables
+table {
+    border-collapse: collapse;
+    th, td {
+        border: 1px solid;
+        padding: 0.5em 1em;
+    }
+}
+
+// Forms
+label {
+    &.multiple-choice {}
+}
+.form-field-wrapper {}
+.form-option-wrapper {}
+.form-error {}
+.form-info {}
+
+// Flash feedback
+.flash-feedback {
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    margin: 0.5em auto;
+    text-align: center;
+    width: 960px;
+}
+.flash-confirmation {
+    @extend .flash-feedback;
+    background-color: #88ff88;
+    border: 1px solid #004400;
+    color: #004400;
+}
+.flash-info {
+    @extend .flash-feedback;
+    background-color: #ffff88;
+    border: 1px solid #444400;
+    color: #444400;
+}
+.flash-error {
+    @extend .flash-feedback;
+    background-color: #ff8888;
+    border: 1px solid #440000;
+    color: #440000;
+}
